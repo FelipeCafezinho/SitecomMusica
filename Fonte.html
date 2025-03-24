@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        h1{
+            color: white;
+            margin-left: 38%;
+            margin-top: 5%;
+            font-size: 3em;
+        }
+
+        img{
+            width: 25%;
+            margin-left: 38%;
+        }
+
+        audio{
+            margin-left: 38%;
+        }
+    </style>
+</head>
+<body id="bodi">
+
+    <h1 id="H1Usado">
+       Musiquinha =D
+    </h1>
+     <img src="dfgvufv-b2feea16-bf59-486d-9ca5-94483603613d.gif" alt=""><br><br>
+
+     <audio controls>
+        <source src="Iframe Game Over - Super Mario World [uH1Go3HdYVE].mp3" type="audio/mpeg">
+        </audio>
+    <script>
+     
+     var cores = ["blue", "yellow", "red", "green", "purple", "brown", "cyan", "gray"]
+
+     function mudarCor(){
+        var CorAleatoria = Math.floor(Math.random() * cores.length)
+        var cor = cores[CorAleatoria];
+        document.getElementById('H1Usado').style.color = cor
+     }
+      setInterval(function(){
+        mudarCor();
+      }, 1000)
+      event.preventDefault()
+    </script>
+</body>
+</html>
